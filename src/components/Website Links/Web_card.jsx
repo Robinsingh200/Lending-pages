@@ -1,4 +1,4 @@
-import './weblinks.css'
+import './Weblinks.css'
 import { FaStackOverflow } from 'react-icons/fa';
 const Weblinks = () => {
     const arr = ['Css Ticks', 'Stack overflow ', 'GeeksforGeeks']
