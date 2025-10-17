@@ -1,6 +1,6 @@
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import { FaArrowCircleRight } from 'react-icons/fa';
-import './ComunityCard.css'
+import './comunityCard.css'
 export const ComunityCard = () => {
 
     const arr = ['Tom Hardy', 'Henry Kalvien', 'Williomson classic']
