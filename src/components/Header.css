@@ -1,0 +1,201 @@
+.hearder_main{
+     padding-left: 100px;
+}
+
+.flex_header{
+     display:  flex;
+     gap: 70px;
+
+}
+
+.flex_header h1{
+    
+    max-width: 800px;
+    width: 500px;
+    font-size: 50px;
+    color: #3E54A3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 15px;
+    line-height: 3.5rem;
+    font-weight: normal;
+
+}
+
+.flex_header p{
+    max-width: 800px;
+    width: 550px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5px;
+    line-height: 1.9rem;
+    font-weight: normal;
+    padding-bottom: 20px;
+    color: rgb(87, 82, 82);
+}
+
+
+.number_1{
+     color: #1139ca;
+     padding:5px;
+     font-weight: bold;
+}
+
+.btn-b{
+  display: flex; 
+  padding-top: 40px;  
+  gap: 40px;   
+}
+
+
+.Btn_browser{
+      border-radius: 35px;
+      background-color: rgb(225 29 72 );
+      font-weight: bold;
+      color: white;
+      font-size: 18px;   
+      width: 400px;
+      height: 55px;
+      align-items: center;      
+}
+
+.Btn_browser_2{
+      border-radius: 35px;
+      gap: 10px;
+      background-color: rgb(255, 255, 255);
+      font-weight: bold;
+      color: black;
+      font-size: 18px;  
+      height: 55px;
+      width: 400px;
+      
+}
+.githublogo{
+     /* padding-top:5px; */
+      font-size: 20px;
+}
+
+
+.feedback-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #384aa6; 
+  color: white;
+  border-radius: 30px;
+  max-width: 1100px;
+  margin:40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  padding-right:20px ;
+}
+
+.feedback-text {
+  max-width: 70%;
+}
+
+.feedback-text h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feedback-text p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.learn-btn {
+  background-color: white;
+  color: #384aa6;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.learn-btn:hover {
+  background-color: #e5e7eb;
+}
+
+
+
+
+
+
+@media (max-width: 780px) {
+  .hearder_main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .flex_header h1 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .flex_header p {
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.6rem;
+  }
+
+  .Btn_browser,
+  .Btn_browser_2 {
+    width: 100%;
+  }
+
+  .feedback-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .feedback-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 780px) {
+  .hearder_main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .flex_header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .flex_header h1 {
+    font-size: 32px;
+    line-height: 2.5rem;
+  }
+
+  .flex_header p {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+
+  .btn-b {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Btn_browser,
+  .Btn_browser_2 {
+    width: 100%;
+  }
+
+  .learn-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

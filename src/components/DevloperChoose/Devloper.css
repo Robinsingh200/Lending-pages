@@ -1,0 +1,100 @@
+.dev_parents {
+  box-shadow: 0 4px 12px rgba(218, 215, 215, 0.1);
+  margin-top: 40px;
+}
+
+/* Text container */
+.why_dev {
+  min-width: 600px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 10px;
+  width: 300px;
+  text-align: center;
+  padding-left: 350px;
+  line-height: 4rem;
+}
+
+/* General margin */
+.Devloper_home {
+  margin: 30px;
+}
+
+/* Photos container all use flex row */
+.photos_dev_1,
+.photos_dev_2,
+.photos_dev_3,
+.photos_dev_4 {
+  display: flex;
+  max-width: 1280px;
+  padding-bottom: 35px;
+  gap: 20px; /* nice gap between items */
+  align-items: center; /* vertical alignment */
+}
+
+/* Headings styling */
+.photos_dev_1 h1,
+.photos_dev_2 h1,
+.photos_dev_3 h1,
+.photos_dev_4 h1 {
+  width: 640px;
+  padding-left: 90px;
+  padding-top: 80px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Paragraph styling */
+.photos_dev_1 p,
+.photos_dev_2 p,
+.photos_dev_3 p,
+.photos_dev_4 p {
+  width: 540px;
+  padding-left: 90px;
+  line-height: 2rem;
+  font-size: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 780px) {
+  
+  /* Stack photos_dev sections vertically */
+  .photos_dev_1,
+  .photos_dev_2,
+  .photos_dev_3,
+  .photos_dev_4 {
+    flex-direction: column;
+    padding-left: 20px; /* less padding on small screens */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Headings full width and padding reset */
+  .photos_dev_1 h1,
+  .photos_dev_2 h1,
+  .photos_dev_3 h1,
+  .photos_dev_4 h1 {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 10px;
+    text-align: center; /* center text on small screens */
+  }
+  
+  /* Paragraph full width and padding reset */
+  .photos_dev_1 p,
+  .photos_dev_2 p,
+  .photos_dev_3 p,
+  .photos_dev_4 p {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /* Adjust why_dev width and padding for small screens */
+  .why_dev {
+    min-width: auto;
+    width: 100%;
+    padding-left: 0;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+}

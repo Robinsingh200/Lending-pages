@@ -1,0 +1,135 @@
+/* Outer container */
+.coumunity_card {
+    max-width: 100%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #F3F4F6;
+    box-sizing: border-box;
+}
+
+/* Top heading with arrows */
+.Top_head {
+    text-align: start;
+    background-color: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Arrow controls */
+.arrow_lr {
+    font-size: 2rem;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.arrow_lr div:hover {
+    color: gray;
+}
+
+/* Main card container */
+.main_comunity {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+/* Individual cards */
+.Card_comunity {
+    width: 100%;
+    max-width: 350px;
+    min-height: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* Paragraph inside card - limit to 3 lines */
+.Card_comunity p {
+    font-size: 16px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* List styling */
+.Card_comunity ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Card_comunity li {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* 🔁 RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 1024px) {
+    .Top_head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .main_comunity {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coumunity_card {
+        padding: 20px;
+    }
+
+    .Card_comunity {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .arrow_lr {
+        font-size: 1.5rem;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Top_head {
+        text-align: center;
+        align-items: center;
+    }
+
+    .arrow_lr {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Card_comunity p {
+        font-size: 14px;
+    }
+}

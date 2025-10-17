@@ -1,0 +1,159 @@
+/* .shitf_pay {
+    padding-left: 500px;
+    display: flex;
+    
+} */
+.items_list{
+    margin-top: 25px;
+     padding-left: 23px;
+     font-size: 18px;
+}
+
+.btn_pay_method_1 {
+    padding-left: 600px;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    padding-top:50px;
+
+}
+
+.btn_pay_method {
+    width: 300px;
+    border-radius: 25px;
+    align-items: center;
+    border: 2px solid rgb(243, 236, 236);
+    box-shadow: 0px 2px 8px gray;
+
+
+}
+
+.btn_pay_method button {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+
+}
+
+.btn_pay_method button:hover {
+    background-color: rgb(164, 125, 200);
+}
+
+.pay_parents {
+    margin-top: 50px;
+    box-shadow: 0px 4px 9px grey;
+    border-radius: 30px;
+}
+
+.pay_card {
+    display: flex;
+    padding-left: 350px;
+    gap: 50px;
+    text-align: center;
+
+}
+
+.pay_card_1 {
+    margin-top: 20px;
+    box-shadow: 0px 4px 9px grey;
+    border-radius: 12px;
+    width: 400px;
+    height: 500px;
+
+}
+
+.pay_card_2 {
+    box-shadow: 0px 4px 9px grey;
+    border-radius: 12px;
+    width: 400px;
+    height: 520px;
+}
+
+.top_pay {
+    background-color: #3b51a0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 12px;
+    font-size: 20px;
+    color: white
+}
+
+/* pay images s */
+
+.btn_pay {
+    border-radius: 19px;
+    height: 45px;
+    width: 300px;
+    font-weight: bold;
+    background-color: rgb(225 29 72);
+    color: white;
+    font-size: 18px;
+
+}
+
+.pay_all_images {
+    padding-left: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay_images {
+
+    width: 520px;
+    justify-content: center;
+    background-color: #F3F4F6;
+    padding-top: 20px;
+    height: 70px;
+    border-radius: 12px;
+
+}
+
+.pay_images img {
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.pay_all_images {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.shitf_pay li {
+    /* list-style: none; */
+    text-align: start;
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+    .pay_card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pay_card_1,
+    .pay_card_2 {
+        width: 100%;      /* full width on small screens */
+        max-width: 100%;  /* prevent overflow */
+        height: auto;     /* let height adjust naturally */
+    }
+
+    .btn_pay_method_1 {
+        padding-left: 0;
+    }
+
+    .pay_images {
+        padding: 15px;
+    }
+
+    .pay_images img {
+        height: 35px;
+    }
+}

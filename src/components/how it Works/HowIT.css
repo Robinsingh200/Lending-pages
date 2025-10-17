@@ -1,0 +1,84 @@
+/* Desktop: side by side layout */
+.HowIT {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Boxes container: flex row with wrapping */
+.box_parents {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+/* Image styling */
+.Images_work img {
+  width: 600px;
+  height: 460px;
+  max-width: 100%;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+
+.box_1{
+     border: 2px solid rgb(251, 234, 234);
+     margin: 30px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #3E54A3;
+    font-weight: bold;
+    color: white;
+}
+
+
+.how_it_p{
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #F3F4F6;
+
+}
+
+.work_h1{
+    padding-top:30px;    
+    padding-left: 50px;
+    font-size: 30px;
+    padding-left: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    
+}
+
+
+
+
+.box_1 h2, p{
+    padding-left: 25px;
+}
+
+.box_parents{
+      gap: 30px;
+}
+
+@media (max-width: 780px) {
+  .HowIT {
+    flex-direction: column; /* stack vertically */
+  }
+
+  .Images_work {
+    order: -1; /* move image before boxes */
+    margin-bottom: 20px;
+    width: 100%; /* full width on mobile */
+  }
+
+  .box_parents {
+    flex-direction: column; /* stack boxes vertically */
+    gap: 20px;
+    order: 0; /* normal order after image */
+  }
+
+  .box_1, .box_4 {
+    flex: none;
+    width: 100%; /* boxes take full width */
+  }
+}
