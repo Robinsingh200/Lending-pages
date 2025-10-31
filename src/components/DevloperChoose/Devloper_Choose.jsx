@@ -16,7 +16,7 @@ export const DevloperChoose = () => {
                         <p>Stop watching and start creating. Build professional-quality projects that develop genuine coding skills through hands-on practice.</p></span>
 
                     <div>
-                        <img src="./public/home-why-1.webp" alt="" width={600} height={460} />
+                        <img src="./public/home-why-1.webp" alt="" width={600} height={460}/>
                     </div>
                 </div>
 

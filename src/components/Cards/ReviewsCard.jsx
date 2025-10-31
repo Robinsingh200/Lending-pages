@@ -12,7 +12,7 @@ const ReviewCard = () => {
 
                     <span className='profile'>
 
-                        <img className='rounded' src="./public/human.webp" alt="" width={50} height={40} />
+                        <img className='rounded' src="./public/human.webp" alt="" />
                         <h3>Kevin Powell</h3>
                     </span>
 

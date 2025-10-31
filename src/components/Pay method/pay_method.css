@@ -1,159 +1,184 @@
-/* .shitf_pay {
-    padding-left: 500px;
-    display: flex;
-    
-} */
-.items_list{
-    margin-top: 25px;
-     padding-left: 23px;
-     font-size: 18px;
+/* =============== Desktop Base Styles =============== */
+.items_list {
+  margin-top: 25px;
+  padding-left: 23px;
+  font-size: 18px;
 }
 
 .btn_pay_method_1 {
-    padding-left: 600px;
-    margin-top: 5px;
-    padding-bottom: 30px;
-    padding-top:50px;
-
+  padding-left: 590px;
+  margin-top: 5px;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
 
 .btn_pay_method {
-    width: 300px;
-    border-radius: 25px;
-    align-items: center;
-    border: 2px solid rgb(243, 236, 236);
-    box-shadow: 0px 2px 8px gray;
-
-
+  width: 300px;
+  border-radius: 25px;
+  align-items: center;
+  border: 2px solid rgb(243, 236, 236);
+  box-shadow: 0px 2px 8px gray;
 }
 
 .btn_pay_method button {
-    padding: 20px;
-    border-radius: 15px;
-    border: none;
-    background-color: white;
-    font-size: 20px;
-
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
 .btn_pay_method button:hover {
-    background-color: rgb(164, 125, 200);
+  background-color: rgb(164, 125, 200);
 }
 
 .pay_parents {
-    margin-top: 50px;
-    box-shadow: 0px 4px 9px grey;
-    border-radius: 30px;
+  margin-top: 50px;
+  box-shadow: 0px 4px 9px grey;
+  border-radius: 30px;
+  padding-bottom: 30px;
 }
 
+/* Pay cards section */
 .pay_card {
-    display: flex;
-    padding-left: 350px;
-    gap: 50px;
-    text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  gap: 50px;
+  text-align: center;
+  flex-wrap: wrap; /* ✅ auto wrap for smaller screens */
 }
 
-.pay_card_1 {
-    margin-top: 20px;
-    box-shadow: 0px 4px 9px grey;
-    border-radius: 12px;
-    width: 400px;
-    height: 500px;
-
-}
-
+.pay_card_1,
 .pay_card_2 {
-    box-shadow: 0px 4px 9px grey;
-    border-radius: 12px;
-    width: 400px;
-    height: 520px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 9px grey;
+  border-radius: 12px;
+  width: 400px;
+  min-height: 480px;
+  background-color: white;
+  overflow: hidden;
 }
 
 .top_pay {
-    background-color: #3b51a0;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    padding: 12px;
-    font-size: 20px;
-    color: white
+  background-color: #3b51a0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 12px;
+  font-size: 20px;
+  color: white;
 }
 
-/* pay images s */
-
+/* Payment button */
 .btn_pay {
-    border-radius: 19px;
-    height: 45px;
-    width: 300px;
-    font-weight: bold;
-    background-color: rgb(225 29 72);
-    color: white;
-    font-size: 18px;
-
+  border-radius: 19px;
+  height: 45px;
+  width: 300px;
+  font-weight: bold;
+  background-color: rgb(225 29 72);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.btn_pay:hover {
+  background-color: rgb(190, 24, 60);
+}
+
+/* Payment logos */
 .pay_all_images {
-    padding-left: 500px;
-    align-items: center;
-    justify-content: center;
+  padding-left: 500px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .pay_images {
-
-    width: 520px;
-    justify-content: center;
-    background-color: #F3F4F6;
-    padding-top: 20px;
-    height: 70px;
-    border-radius: 12px;
-
+  width: 520px;
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ for mobile logo wrapping */
 }
 
 .pay_images img {
-    border-radius: 12px;
-    padding: 5px;
-}
-
-.pay_all_images {
-    padding-bottom: 40px;
-    padding-top: 40px;
+  border-radius: 12px;
+  padding: 5px;
+  height: 45px;
 }
 
 .shitf_pay li {
-    /* list-style: none; */
-    text-align: start;
-    line-height: 2rem;
+  text-align: start;
+  line-height: 2rem;
 }
 
+/* =============== Responsive Section =============== */
 
+/* 📱 For Tablets & Phones */
+@media (max-width: 1024px) {
+  .pay_card {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 30px;
+  }
 
+  .pay_card_1,
+  .pay_card_2 {
+    width: 90%;
+    max-width: 380px;
+    height: auto;
+  }
 
+  .btn_pay_method_1 {
+    padding-left: 0;
+    text-align: center;
+  }
 
+  .pay_all_images {
+    padding-left: 0;
+  }
 
+  .pay_images {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+  }
 
-@media (max-width: 780px) {
-    .pay_card {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  .pay_images img {
+    height: 35px;
+  }
 
-    .pay_card_1,
-    .pay_card_2 {
-        width: 100%;      /* full width on small screens */
-        max-width: 100%;  /* prevent overflow */
-        height: auto;     /* let height adjust naturally */
-    }
+  .why_dev {
+    text-align: center;
+  }
+}
 
-    .btn_pay_method_1 {
-        padding-left: 0;
-    }
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+  .pay_card_1,
+  .pay_card_2 {
+    width: 95%;
+    max-width: 350px;
+  }
 
-    .pay_images {
-        padding: 15px;
-    }
+  .pay_images {
+    width: 100%;
+  }
 
-    .pay_images img {
-        height: 35px;
-    }
+  .pay_images img {
+    height: 30px;
+  }
+
+  .btn_pay {
+    width: 100%;
+    max-width: 250px;
+  }
 }

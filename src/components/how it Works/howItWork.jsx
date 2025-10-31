@@ -26,7 +26,7 @@ const HowIT = () => {
                 </div>
 
                    <div className='box_4'>
-                      <h2>Help others grow</h2>
+                      <h2 className='help'>Help others grow</h2>
 
                 </div>
             </div>

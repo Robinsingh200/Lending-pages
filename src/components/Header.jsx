@@ -5,7 +5,7 @@ const Herder = () => {
 
         <main className="hearder_main">
 
-            <div>
+            <div className='forle'>
                 <p>For LEARNERS</p>
             </div>
 
@@ -26,8 +26,8 @@ const Herder = () => {
                     </span>
                 </p>
 
-                <div>
-                    <img src="./public/fist-page.webp" alt="" width={540} height={579} />
+                <div className='headerpic_div' >
+                    <img className='headerpic' src="./public/fist-page.webp" alt="" width={540} height={579} />
 
                 </div>
             </div>

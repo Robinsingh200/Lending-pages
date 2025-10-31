@@ -1,11 +1,10 @@
-/* Desktop: side by side layout */
+/* Base (Desktop / large screens) */
 .HowIT {
   display: flex;
   gap: 40px;
   align-items: flex-start;
 }
 
-/* Boxes container: flex row with wrapping */
 .box_parents {
   display: flex;
   gap: 30px;
@@ -13,7 +12,6 @@
   flex: 1;
 }
 
-/* Image styling */
 .Images_work img {
   width: 600px;
   height: 460px;
@@ -22,63 +20,104 @@
   flex-shrink: 0;
 }
 
-
-.box_1{
-     border: 2px solid rgb(251, 234, 234);
-     margin: 30px;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    background-color: #3E54A3;
-    font-weight: bold;
-    color: white;
+.box_1 {
+  border: 2px solid rgb(251, 234, 234);
+  margin: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #3e54a3;
+  font-weight: bold;
+  color: white;
 }
 
-
-.how_it_p{
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #F3F4F6;
-
+.how_it_p {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f3f4f6;
 }
 
-.work_h1{
-    padding-top:30px;    
-    padding-left: 50px;
-    font-size: 30px;
-    padding-left: 100px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    
+.work_h1 {
+  padding-top: 30px;
+  padding-left: 100px;
+  font-size: 30px;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 
-
-
-
-.box_1 h2, p{
-    padding-left: 25px;
+.box_1 h2,
+.box_1 p {
+  padding-left: 25px;
 }
+/* ✅ Responsive — Works on all phones & tablets smoothly */
+@media (max-width: 1024px) {
+  /* Universal Box Model Safety */
+  .HowIT,
+  .Images_work,
+  .box_parents,
+  .box_1,
+  .work_h1,
+  .box_1 h2,
+  .box_1 p {
+    box-sizing: border-box;
+  }
 
-.box_parents{
-      gap: 30px;
-}
-
-@media (max-width: 780px) {
   .HowIT {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 clamp(10px, 4vw, 30px);
   }
 
+  /* Image section */
   .Images_work {
-    order: -1; /* move image before boxes */
-    margin-bottom: 20px;
-    width: 100%; /* full width on mobile */
+    order: -1;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
   }
 
+  .Images_work img {
+    width: clamp(260px, 90%, 600px);
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Box container */
   .box_parents {
-    flex-direction: column; /* stack boxes vertically */
-    gap: 20px;
-    order: 0; /* normal order after image */
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(10px, 3vw, 25px);
+    margin-top: clamp(10px, 3vw, 30px);
   }
 
-  .box_1, .box_4 {
-    flex: none;
-    width: 100%; /* boxes take full width */
+  .box_1 {
+    width: 100%;
+    max-width: 600px; /* prevents it from becoming too wide on tablets */
+    text-align: center;
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 25px);
+  }
+
+  /* Headings */
+  .box_1 h2 {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    margin-bottom: 10px;
+  }
+
+  /* Paragraphs */
+  .box_1 p {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  /* Section heading */
+  .work_h1 {
+    padding-left: 0;
+    text-align: center;
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+    margin-bottom: 20px;
+  }
+
+  .help {
+    text-align: center;
   }
 }

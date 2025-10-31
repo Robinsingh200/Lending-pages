@@ -1,118 +1,119 @@
-.dev_parents{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-     margin-top: 40px;
-     
-
-
-}
-.why_dev{
-     min-width: 600px;
-     font-size: 20px;
-     font-family:Georgia, 'Times New Roman', Times, serif;
-     padding-top:  10px;
-     width: 300px;
-     text-align: center;
-     padding-left: 350px;
-     line-height: 4rem;
-
+.dev_parents {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 
+/* Header Section */
+.why_dev {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 20px;
+  line-height: 3rem;
+  max-width: 100%;
+}
+
+/* Developer section container */
 .Devloper_home {
-    margin: 30px;
-   
+  margin: 30px;
 }
 
-
-.photos_dev_1{
-    display: flex;
-    max-width: 1280px;
-    padding-bottom: 35px;
+/* Shared styles for both sections */
+.photos_dev_1,
+.photos_dev_2 {
+  display: flex;
+  flex-wrap: wrap; /* ✅ allows auto adjustment */
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
 }
 
-.photos_dev_2{
-    display: flex;
-    max-width: 1280px;
-    padding-bottom: 35px;
-
+/* Images inside sections */
+.photos_dev_1 img,
+.photos_dev_2 img {
+  width: 45%; /* ✅ automatically scales down */
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.photos_dev_1 h1{
-    width: 640px;
-    padding-left: 90px;
-    padding-top: 80px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Text side */
+.photos_dev_1 h1,
+.photos_dev_2 h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
-.photos_dev_2 h1{
-    width: 640px;
-    padding-left:100px;
-    padding-top: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.photos_dev_1 p,
+.photos_dev_2 p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
-
-.btn_devl{
-     
-    width: 220px;
-    height: 60px;
-    border-radius: 35px;
-    background-color: rgb(243, 21, 21);
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    color: white;
+.btn_devl {
+  width: 220px;
+  height: 60px;
+  border-radius: 35px;
+  background-color: rgb(243, 21, 21);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.photos_dev_1 p{
-    width: 540px;
-    padding-right: 90px;
-    line-height: 2rem;
-    font-size: 20px;
-    
+/* --- ✅ Responsive design --- */
+
+/* Tablets and Phones */
+@media (max-width: 1024px) {
+  .photos_dev_1,
+  .photos_dev_2 {
+    flex-direction: column; /* stack image + text */
+    text-align: center;
+  }
+
+  .photos_dev_1 img,
+  .photos_dev_2 img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .why_dev {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    padding: 15px;
+  }
+
+  .btn_devl {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
 }
 
-.photos_dev_2 p{
-    width: 540px;
-    padding-right: 90px;
-    line-height: 2rem;
-    font-size: 20px;
-    padding-left: 100px;
-}
+/* Small phones */
+@media (max-width: 480px) {
+  .photos_dev_1 img,
+  .photos_dev_2 img {
+    width: 100%;
+    max-width: 350px;
+  }
 
-.btn_div{
-    padding-left:100px;
-}
+  .photos_dev_1 p,
+  .photos_dev_2 p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
 
-.btn_for{
-     padding-left: 90px;
-}
-
-
-@media (max-width: 780px) {
-    .why_dev {
-        font-size: 1.1rem;
-        line-height: 2.5rem;
-        padding: 10px;
-    }
-
-    .photos_dev {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .photos_dev h1,
-    .photos_dev p {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .btn_devl {
-        width: 100%;
-        max-width: 220px;
-    }
-
-    .btn_div,
-    .btn_for {
-        padding: 0;
-    }
+  .why_dev {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }

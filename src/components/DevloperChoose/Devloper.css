@@ -1,100 +1,138 @@
+/* ========= BASE (Desktop Default) ========= */
 .dev_parents {
   box-shadow: 0 4px 12px rgba(218, 215, 215, 0.1);
   margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Text container */
+/* Header Text */
 .why_dev {
-  min-width: 600px;
-  font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-top: 10px;
-  width: 300px;
   text-align: center;
-  padding-left: 350px;
-  line-height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1f2937;
 }
 
-/* General margin */
+/* Container */
 .Devloper_home {
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 30px auto;
+  max-width: 1200px;
 }
 
-/* Photos container all use flex row */
+/* Rows */
 .photos_dev_1,
 .photos_dev_2,
 .photos_dev_3,
 .photos_dev_4 {
   display: flex;
-  max-width: 1280px;
-  padding-bottom: 35px;
-  gap: 20px; /* nice gap between items */
-  align-items: center; /* vertical alignment */
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
-/* Headings styling */
+/* Text Styling */
 .photos_dev_1 h1,
 .photos_dev_2 h1,
 .photos_dev_3 h1,
 .photos_dev_4 h1 {
-  width: 640px;
-  padding-left: 90px;
-  padding-top: 80px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-/* Paragraph styling */
 .photos_dev_1 p,
 .photos_dev_2 p,
 .photos_dev_3 p,
 .photos_dev_4 p {
-  width: 540px;
-  padding-left: 90px;
-  line-height: 2rem;
-  font-size: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #374151;
+  max-width: 520px;
 }
 
-/* Responsive styles */
-@media (max-width: 780px) {
-  
-  /* Stack photos_dev sections vertically */
+/* Image Styling */
+.photos_dev_1 img,
+.photos_dev_2 img,
+.photos_dev_3 img,
+.photos_dev_4 img {
+  border-radius: 12px;
+  width: 600px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ========= RESPONSIVE (All Devices Under 1024px) ========= */
+@media (max-width: 1024px) {
+  .Devloper_home {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
   .photos_dev_1,
   .photos_dev_2,
   .photos_dev_3,
   .photos_dev_4 {
     flex-direction: column;
-    padding-left: 20px; /* less padding on small screens */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-align: center;
+    gap: 20px;
   }
-  
-  /* Headings full width and padding reset */
+
+  .photos_dev_1 span,
+  .photos_dev_2 span,
+  .photos_dev_3 span,
+  .photos_dev_4 span {
+    max-width: 90%;
+  }
+
   .photos_dev_1 h1,
   .photos_dev_2 h1,
   .photos_dev_3 h1,
   .photos_dev_4 h1 {
-    width: 100%;
-    padding-left: 0;
-    padding-top: 10px;
-    text-align: center; /* center text on small screens */
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+    line-height: 1.4;
   }
-  
-  /* Paragraph full width and padding reset */
+
   .photos_dev_1 p,
   .photos_dev_2 p,
   .photos_dev_3 p,
   .photos_dev_4 p {
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    line-height: 1.6;
   }
 
-  /* Adjust why_dev width and padding for small screens */
+  .photos_dev_1 img,
+  .photos_dev_2 img,
+  .photos_dev_3 img,
+  .photos_dev_4 img {
+    width: clamp(260px, 80%, 400px);
+    height: auto;
+  }
+}
+
+/* ========= EXTRA SMALL DEVICES (Phones Under 480px) ========= */
+@media (max-width: 480px) {
   .why_dev {
-    min-width: auto;
-    width: 100%;
-    padding-left: 0;
-    line-height: 2.5rem;
-    text-align: center;
+    font-size: clamp(1.2rem, 6vw, 1.4rem);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .photos_dev_1,
+  .photos_dev_2,
+  .photos_dev_3,
+  .photos_dev_4 {
+    gap: 25px;
+  }
+
+  .photos_dev_1 p,
+  .photos_dev_2 p,
+  .photos_dev_3 p,
+  .photos_dev_4 p {
+    padding: 0 15px;
   }
 }
